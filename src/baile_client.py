@@ -42,7 +42,6 @@ if __name__ == '__main__':
             goal = baile2.msg.BaileGoal(order=TURNING)
             client.send_goal(goal)
             client.wait_for_result()
-            
-            print "otro while ahora"
+
     except rospy.ROSInterruptException:
         print "program interrupted before completion"
